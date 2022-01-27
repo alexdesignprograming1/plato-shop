@@ -8,7 +8,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    color: white;
     scroll-behavior: smooth;
   }
 
