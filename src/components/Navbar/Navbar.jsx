@@ -10,6 +10,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   margin: 1rem;
   position: relative;
+  transition: ease-in 0.2s;
+  &:hover{
+    color: #115DA8;
+  }
 `;
 
 const Navbar = () => {

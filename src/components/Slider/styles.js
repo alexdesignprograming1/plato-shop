@@ -28,6 +28,7 @@ const Arrow = styled.div`
 `;
 
 const Wrapper = styled.div`
+  margin-top: 20px;
   height: 100%;
   display: flex;
   transition: all 1.5s ease;
@@ -70,8 +71,15 @@ const Desc = styled.p`
 const Button = styled.button`
   padding: 10px;
   font-size: 20px;
-  background-color: transparent;
+  border-radius: 4px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
   cursor: pointer;
+  &:hover{
+    background-color: #006000;
+    color: #f1f1f1;
+  }
 `;
 
 

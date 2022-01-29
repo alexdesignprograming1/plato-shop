@@ -32,12 +32,16 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  &:focus{
+    outline: none;
+  }
 `;
 
 const Center = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const Logo = styled.h1`
@@ -55,6 +59,7 @@ const MenuItem = styled.div`
   font-size:  1rem;
   cursor: pointer;
   margin-left: 25px;
+  font-weight: 500;
 `;
 
 export {Container, Wrapper, Left, Center, Right, Language, SearchContainer, Input, Logo, MenuItem};
