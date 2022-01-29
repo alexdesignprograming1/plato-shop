@@ -1,7 +1,16 @@
+import {Link} from "react-router-dom"; 
+import styled from "styled-components";
 import {Badge} from "@material-ui/core";
 import {Search, ShoppingCartOutlined} from "@material-ui/icons";
 
 import {Container, Wrapper, Left, Language, SearchContainer, Input, Center, Logo, Right, MenuItem} from "./styles";
+
+const StyledLink = styled(Link)`
+  color: #000;
+  text-decoration: none;
+  margin: 1rem;
+  position: relative;
+`;
 
 const Navbar = () => {
   return(
@@ -15,15 +24,23 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>PLATOCENTER</Logo>
+          <StyledLink to="/">
+            <Logo>PLATOCENTER</Logo>
+          </StyledLink>
         </Center>
         <Right>
+        <StyledLink to="/register">
           <MenuItem>REGISTRAR</MenuItem>
+        </StyledLink>
+        <StyledLink to="/login">
           <MenuItem>ENTRAR</MenuItem>
+        </StyledLink>
           <MenuItem>
-            <Badge>
-              <ShoppingCartOutlined />
-            </Badge>
+            <StyledLink to="/cart">
+              <Badge>
+                <ShoppingCartOutlined />
+              </Badge>
+            </StyledLink>
           </MenuItem>
         </Right>
       </Wrapper>
