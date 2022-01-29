@@ -6,7 +6,7 @@ const Newsletter = () => {
   return(
     <Container>
       <Title>Notícias</Title>
-      <Desc>Get time updates from your favorites products</Desc>
+      <Desc>Receba atualizações de tempo de seus produtos favoritos</Desc>
       <InputContainer>
         <Input />
           <Button>
